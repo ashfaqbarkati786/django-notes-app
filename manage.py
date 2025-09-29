@@ -3,7 +3,7 @@
 import os
 import sys
 
-#writtent to trigger webhook
+#writtent to trigger webhook 12
 def main():
     """Run administrative tasks."""
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'notesapp.settings')
