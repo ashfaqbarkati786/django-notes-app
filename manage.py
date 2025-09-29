@@ -3,7 +3,7 @@
 import os
 import sys
 
-#writtent to trigger webhook with new one after inbound is allsowed
+#writtent to
 def main():
     """Run administrative tasks."""
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'notesapp.settings')
