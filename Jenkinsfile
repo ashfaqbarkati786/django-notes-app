@@ -22,17 +22,17 @@ pipeline {
                 }
             }
         }
-        stage("Build Docker Image") {
+        stage("Build Docker Image and tag") {
             steps {
                 script {
-                    dockerBuild(env.IMAGE_NAME, env.IMAGE_TAG, env.ECR_REGISTRY)
+                    Dockerbuild(env.IMAGE_NAME, env.IMAGE_TAG, env.ECR_REGISTRY)
                 }
             }
         }
         stage("Push Docker Image to ECR") {
             steps {
                 script {
-                    dockerPush(env.IMAGE_NAME, env.IMAGE_TAG, env.ECR_REGISTRY)
+                    DockerPush(env.IMAGE_NAME, env.IMAGE_TAG, env.ECR_REGISTRY)
                 }
             }
         }
