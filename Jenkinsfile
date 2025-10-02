@@ -1,4 +1,4 @@
-@Library("shared") _
+@Library("jenkins-functions") _
 pipeline {
     agent { label 'ec2-agent' }
     environment {
